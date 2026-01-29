@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navLinks = [
@@ -20,8 +21,15 @@ export default function Header() {
           href="/"
           className="flex items-center gap-2.5 font-semibold tracking-tight text-slate-900 transition hover:opacity-90"
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 text-lg text-white shadow-lg shadow-emerald-500/25">
-            🔧
+          <span className="relative flex h-10 w-10 shrink-0 overflow-hidden shadow-lg shadow-emerald-500/25">
+            <Image
+              src="/logo.png"
+              alt="ReparaSur"
+              width={40}
+              height={40}
+              className="object-cover"
+              priority
+            />
           </span>
           <span className="text-lg">ReparaSur</span>
         </Link>

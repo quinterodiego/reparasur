@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = {
   servicios: [
@@ -26,8 +27,14 @@ export default function Footer() {
               href="/"
               className="inline-flex items-center gap-2.5 font-semibold text-white"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-lg text-white">
-                🔧
+              <span className="relative flex h-10 w-10 shrink-0 overflow-hidden">
+                <Image
+                  src="/logo.png"
+                  alt="ReparaSur"
+                  width={40}
+                  height={40}
+                  className="object-cover"
+                />
               </span>
               ReparaSur
             </Link>
