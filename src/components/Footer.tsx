@@ -36,10 +36,11 @@ export default function Footer() {
                   alt="ReparaSur"
                   width={48}
                   height={48}
-                  className="object-cover"
+                  className="h-full w-full object-cover"
+                  unoptimized
                 />
               </span>
-              ReparaSur
+              <span className="text-lg text-white font-bold">ReparaSur</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
               Reparación de computadoras, landing pages, desarrollo web y programación a medida en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada y zona sur. Soluciones rápidas y confiables.

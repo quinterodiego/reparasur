@@ -28,11 +28,12 @@ export default function Header() {
               alt="ReparaSur"
               width={48}
               height={48}
-              className="object-cover"
+              className="h-full w-full object-cover"
               priority
+              unoptimized
             />
           </span>
-          <span className="text-lg">ReparaSur</span>
+          <span className="text-lg text-gray-600 font-bold">ReparaSur</span>
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
