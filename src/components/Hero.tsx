@@ -11,8 +11,8 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Reparación de computadoras y más",
-  subtitle = "Soluciones técnicas rápidas y confiables para PCs, laptops, impresoras y recuperación de datos. Tu equipo en buenas manos.",
+  title = "Reparación, programación y desarrollo web",
+  subtitle = "Reparación de PCs y laptops, recuperación de datos, landing pages, sitios web y programación a medida. Atendemos en Quilmes, Avellaneda, Lomas de Zamora, Banfield, Adrogué, Rafael Calzada y zona sur. Tu equipo y tu proyecto en buenas manos.",
   showCta = true,
   showVerServicios = true,
 }: HeroProps) {
@@ -37,7 +37,7 @@ export default function Hero({
       <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="max-w-2xl">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-emerald-400">
-            Servicio técnico especializado
+            Reparación · Landing pages · Desarrollo web · Zona sur
           </p>
           <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
             {title}

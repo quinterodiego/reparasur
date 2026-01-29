@@ -4,7 +4,7 @@ import FeatureCard from "@/components/FeatureCard";
 
 export const metadata = {
   title: "Nosotros | ReparaSur",
-  description: "Conoce a ReparaSur: tu taller de confianza para reparación de computadoras y equipos tecnológicos.",
+  description: "Conoce a ReparaSur: reparación de computadoras, landing pages, desarrollo web y programación en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada y zona sur.",
 };
 
 const values = [
@@ -21,7 +21,7 @@ const values = [
   {
     icon: "🛡️",
     title: "Garantía",
-    description: "Todas nuestras reparaciones incluyen garantía en mano de obra y componentes.",
+    description: "Reparaciones con garantía en mano de obra; proyectos web con soporte post-entrega.",
   },
   {
     icon: "🤝",
@@ -44,7 +44,7 @@ export default function NosotrosPage() {
     <>
       <Hero
         title="Sobre ReparaSur"
-        subtitle="Años de experiencia reparando computadoras y ayudando a personas y empresas a recuperar sus equipos."
+        subtitle="Años de experiencia en reparación de computadoras, desarrollo de landing pages, sitios web y programación a medida. Para personas y empresas de la zona sur."
         showCta={false}
       />
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
@@ -56,15 +56,10 @@ export default function NosotrosPage() {
             Nuestra misión
           </h2>
           <p className="mt-6 leading-relaxed text-slate-600">
-            En ReparaSur nos dedicamos a ofrecer soluciones técnicas rápidas, transparentes y con garantía.
-            Creemos que un equipo en buen estado es fundamental para el trabajo y el estudio, por eso nos
-            esforzamos en dar un trato cercano y precios justos.
+            En ReparaSur ofrecemos soluciones técnicas rápidas, transparentes y con garantía en Quilmes, Avellaneda, Lomas de Zamora, Banfield, Adrogué, Rafael Calzada y zona sur: reparación de computadoras, landing pages, desarrollo web y programación a medida. Creemos que un equipo en buen estado y una presencia web clara son fundamentales para el trabajo y el negocio; por eso damos un trato cercano y precios justos.
           </p>
           <p className="mt-4 leading-relaxed text-slate-600">
-            Desde nuestros inicios, hemos ayudado a cientos de clientes a recuperar sus equipos y datos.
-            Nos especializamos en reparación de computadoras de escritorio, laptops, recuperación de datos
-            y solución de problemas de software y hardware. Trabajamos con todas las marcas principales
-            y utilizamos componentes de calidad para asegurar la durabilidad de nuestras reparaciones.
+            Reparamos PCs y laptops, recuperamos datos y desarrollamos landing pages, sitios web y aplicaciones a medida. Trabajamos con tecnologías actuales (Next.js, React, TypeScript) y con todas las marcas de hardware. Nuestros clientes de la zona sur confían en nosotros tanto para reparar su equipo como para tener su página de aterrizaje o su sitio web profesional.
           </p>
         </div>
       </section>
@@ -102,7 +97,7 @@ export default function NosotrosPage() {
               <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
               <div>
                 <strong className="text-slate-900">Diagnóstico claro y cotización sin compromiso:</strong>{" "}
-                Antes de reparar, te explicamos exactamente qué necesita tu equipo y cuánto costará.
+                Antes de reparar o desarrollar, te explicamos exactamente qué necesitás y cuánto costará.
               </div>
             </li>
             <li className="flex items-start gap-3">
@@ -116,7 +111,7 @@ export default function NosotrosPage() {
               <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
               <div>
                 <strong className="text-slate-900">Atención completa:</strong> Reparamos PCs, laptops,
-                impresoras, configuramos redes y recuperamos datos. Un solo lugar para todas tus necesidades técnicas.
+                impresoras, recuperamos datos, desarrollamos landing pages, sitios web y aplicaciones a medida. Un solo lugar para reparación y desarrollo.
               </div>
             </li>
             <li className="flex items-start gap-3">

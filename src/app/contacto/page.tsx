@@ -19,7 +19,7 @@ export default function ContactoPage() {
     <>
       <Hero
         title="Contacto"
-        subtitle="Cuéntanos qué necesitas: reparación, cotización o consulta. Te respondemos a la brevedad."
+        subtitle="Cuéntanos qué necesitás: reparación de PC, landing page, sitio web o programación a medida. Atendemos en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada y más. Te respondemos a la brevedad."
         showCta={false}
       />
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">

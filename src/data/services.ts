@@ -153,4 +153,73 @@ export const services: Service[] = [
     timeEstimate: "2-4 horas",
     warranty: "30 días en limpieza",
   },
+  {
+    id: "landing",
+    icon: "📄",
+    title: "Landing pages",
+    description:
+      "Páginas de aterrizaje para captar clientes, promociones o lanzamientos. Diseño moderno, responsive y optimizado para conversiones.",
+    details: [
+      "Diseño a medida según tu marca y objetivo",
+      "Responsive (móvil, tablet, desktop)",
+      "Formularios de contacto y captación de leads",
+      "Integración con WhatsApp, email y redes",
+      "Optimización para velocidad y SEO",
+      "Dominio y hosting: asesoría e instalación",
+    ],
+    features: [
+      "Entrega en 1-2 semanas",
+      "Incluye 1 ronda de cambios",
+      "Tecnología moderna (Next.js, React)",
+      "Listo para Google y redes",
+    ],
+    timeEstimate: "1-2 semanas",
+    warranty: "30 días de soporte post-entrega",
+  },
+  {
+    id: "desarrollo-web",
+    icon: "🌐",
+    title: "Desarrollo web y sitios",
+    description:
+      "Sitios web institucionales, portfolios y páginas corporativas. Diseño profesional, rápido y fácil de actualizar.",
+    details: [
+      "Sitios de varias páginas (inicio, servicios, contacto, etc.)",
+      "Diseño responsive y accesible",
+      "Formularios, mapas, integración con redes",
+      "SEO básico y meta tags configurados",
+      "Panel de administración o actualización guiada",
+      "Asesoría en dominio, hosting y mantenimiento",
+    ],
+    features: [
+      "Tecnología actual (Next.js, React)",
+      "Rendimiento y seguridad",
+      "Soporte post-lanzamiento",
+      "Documentación de uso",
+    ],
+    timeEstimate: "2-4 semanas (según alcance)",
+    warranty: "30 días de soporte post-entrega",
+  },
+  {
+    id: "programacion",
+    icon: "💻",
+    title: "Programación a medida",
+    description:
+      "Desarrollo de aplicaciones web, herramientas internas y soluciones a medida para tu negocio o proyecto.",
+    details: [
+      "Aplicaciones web y dashboards",
+      "Automatización de procesos y reportes",
+      "Integraciones con APIs y servicios externos",
+      "Bases de datos y lógica de negocio",
+      "Mantenimiento y evolución de proyectos existentes",
+      "Consultoría técnica y estimaciones",
+    ],
+    features: [
+      "Tecnologías modernas (React, Node, TypeScript)",
+      "Código mantenible y documentado",
+      "Presupuesto y plazos claros",
+      "Soporte y mejoras continuas",
+    ],
+    timeEstimate: "Según proyecto (cotización sin compromiso)",
+    warranty: "Acordada por proyecto",
+  },
 ];

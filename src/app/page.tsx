@@ -5,6 +5,12 @@ import FeatureCard from "@/components/FeatureCard";
 import ProcessStep from "@/components/ProcessStep";
 import { services } from "@/data/services";
 
+export const metadata = {
+  title: "ReparaSur - Reparación, landing pages y desarrollo web zona sur",
+  description:
+    "Reparación de PCs y laptops, landing pages, desarrollo web y programación a medida en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada. Soluciones rápidas y con garantía.",
+};
+
 const features = [
   {
     icon: "⚡",
@@ -14,17 +20,17 @@ const features = [
   {
     icon: "🛡️",
     title: "Garantía incluida",
-    description: "Todas nuestras reparaciones incluyen garantía en mano de obra.",
+    description: "Reparaciones con garantía en mano de obra; proyectos web con soporte post-entrega.",
   },
   {
     icon: "💰",
     title: "Precios transparentes",
-    description: "Cotización clara antes de comenzar, sin sorpresas.",
+    description: "Cotización clara antes de comenzar, sin sorpresas. Reparación o desarrollo.",
   },
   {
     icon: "🔧",
-    title: "Técnicos certificados",
-    description: "Equipo con años de experiencia y certificaciones técnicas.",
+    title: "Reparación y desarrollo",
+    description: "Técnicos para tu equipo y desarrolladores para landing pages, sitios web y apps.",
   },
 ];
 
@@ -33,25 +39,25 @@ const processSteps = [
     number: 1,
     title: "Contacto y diagnóstico",
     description:
-      "Cuéntanos el problema de tu equipo. Realizamos un diagnóstico inicial gratuito para identificar la falla.",
+      "Cuéntanos qué necesitás: reparación de equipo, landing page, sitio web o desarrollo a medida. Diagnóstico gratuito en reparaciones; consulta sin compromiso en proyectos web.",
   },
   {
     number: 2,
     title: "Cotización detallada",
     description:
-      "Te enviamos un presupuesto claro con el costo de reparación, tiempo estimado y garantía incluida.",
+      "Te enviamos un presupuesto claro: costo, tiempo estimado y garantía o soporte incluido.",
   },
   {
     number: 3,
-    title: "Reparación profesional",
+    title: "Trabajo profesional",
     description:
-      "Una vez aprobado, procedemos con la reparación usando herramientas y componentes de calidad.",
+      "Reparación con componentes de calidad o desarrollo con tecnologías actuales (Next.js, React). Te mantenemos informado en cada etapa.",
   },
   {
     number: 4,
     title: "Entrega y seguimiento",
     description:
-      "Te entregamos tu equipo funcionando y hacemos seguimiento para asegurar tu satisfacción.",
+      "Entrega de equipo reparado o proyecto web listo. Seguimiento y soporte para asegurar tu satisfacción.",
   },
 ];
 
@@ -88,7 +94,7 @@ export default function Home() {
               Nuestros servicios
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-              Ofrecemos soluciones integrales para que tu equipo vuelva a funcionar como nuevo.
+              Reparación de PCs y laptops, recuperación de datos, landing pages, sitios web y programación a medida. Soluciones integrales para tu equipo y tu negocio.
             </p>
           </div>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -124,7 +130,7 @@ export default function Home() {
             Nuestro proceso
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Un proceso simple y transparente desde el primer contacto hasta la entrega de tu equipo reparado.
+            Un proceso simple y transparente desde el primer contacto hasta la entrega: reparación de tu equipo o tu landing page, sitio web o aplicación.
           </p>
         </div>
         <div className="mx-auto mt-14 max-w-2xl space-y-8">
@@ -139,10 +145,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_100%,rgba(16,185,129,0.15),transparent)]" />
         <div className="relative mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            ¿Tu computadora no funciona bien?
+            ¿Reparación, landing page o desarrollo web?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-slate-400">
-            Contáctanos y te daremos una cotización sin compromiso. Respuesta rápida y precios transparentes.
+            Contáctanos y te daremos una cotización sin compromiso. Reparación de PCs, landing pages, sitios web y programación a medida. Atendemos en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada y más.
           </p>
           <Link
             href="/contacto"

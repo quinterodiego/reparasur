@@ -4,9 +4,9 @@ import ServiceCard from "@/components/ServiceCard";
 import { services } from "@/data/services";
 
 export const metadata = {
-  title: "Servicios | ReparaSur - Reparación de computadoras",
+  title: "Servicios | ReparaSur - Reparación, landing pages y desarrollo web",
   description:
-    "Reparación de PCs, laptops, recuperación de datos, impresoras, redes y mantenimiento preventivo.",
+    "Reparación de PCs y laptops, recuperación de datos, landing pages, desarrollo web y programación a medida en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada y zona sur.",
 };
 
 export default function ServiciosPage() {
@@ -14,7 +14,7 @@ export default function ServiciosPage() {
     <>
       <Hero
         title="Nuestros servicios"
-        subtitle="Reparación y mantenimiento de computadoras, laptops, impresoras y más. Soluciones técnicas con garantía."
+        subtitle="Reparación de PCs y laptops, recuperación de datos, landing pages, sitios web y programación a medida en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada y zona sur. Soluciones técnicas con garantía."
         showCta={true}
         showVerServicios={false}
       />
@@ -27,7 +27,7 @@ export default function ServiciosPage() {
             Todo lo que ofrecemos
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Servicios especializados con garantía y precios transparentes. Cada reparación incluye diagnóstico detallado.
+            Reparación, landing pages, desarrollo web y programación a medida. Garantía y precios transparentes. Diagnóstico gratuito en reparaciones; consulta sin compromiso en proyectos web.
           </p>
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

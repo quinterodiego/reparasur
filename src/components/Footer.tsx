@@ -6,7 +6,9 @@ const footerLinks = {
     { label: "Reparación de PCs", href: "/servicios#pcs" },
     { label: "Laptops y notebooks", href: "/servicios#laptops" },
     { label: "Recuperación de datos", href: "/servicios#datos" },
-    { label: "Impresoras y redes", href: "/servicios#redes" },
+    { label: "Landing pages", href: "/servicios#landing" },
+    { label: "Desarrollo web", href: "/servicios#desarrollo-web" },
+    { label: "Programación a medida", href: "/servicios#programacion" },
   ],
   empresa: [
     { label: "Nosotros", href: "/nosotros" },
@@ -39,7 +41,7 @@ export default function Footer() {
               ReparaSur
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
-              Reparación de computadoras y equipos tecnológicos. Soluciones rápidas y confiables.
+              Reparación de computadoras, landing pages, desarrollo web y programación a medida en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada y zona sur. Soluciones rápidas y confiables.
             </p>
           </div>
 
@@ -84,7 +86,7 @@ export default function Footer() {
               Contacto
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-400">
-              <li>📞 (XX) XXXX-XXXX</li>
+              <li>📞 (11) 5176-2371</li>
               <li>✉️ info@reparasur.com</li>
             </ul>
           </div>
