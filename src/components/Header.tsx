@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { logoSrc } from "@/lib/constants";
 
 const navLinks = [
   { href: "/", label: "Inicio" },
@@ -23,7 +24,7 @@ export default function Header() {
         >
           <span className="relative flex h-10 w-10 shrink-0 overflow-hidden shadow-lg shadow-emerald-500/25">
             <Image
-              src="/logo.png"
+              src={logoSrc}
               alt="ReparaSur"
               width={40}
               height={40}

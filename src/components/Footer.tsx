@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { logoSrc } from "@/lib/constants";
 
 const footerLinks = {
   servicios: [
@@ -31,7 +32,7 @@ export default function Footer() {
             >
               <span className="relative flex h-10 w-10 shrink-0 overflow-hidden">
                 <Image
-                  src="/logo.png"
+                  src={logoSrc}
                   alt="ReparaSur"
                   width={40}
                   height={40}

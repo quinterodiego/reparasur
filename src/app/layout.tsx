@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { logoSrc } from "@/lib/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     title: "ReparaSur - Reparación, landing pages y desarrollo web zona sur",
     description:
       "Reparación de PCs y laptops, landing pages, desarrollo web y programación en Quilmes, Avellaneda, Lomas, Banfield, Adrogué, Rafael Calzada. Soluciones rápidas y con garantía.",
-    images: [{ url: "/logo.png", width: 512, height: 512, alt: "ReparaSur" }],
+    images: [{ url: logoSrc, width: 512, height: 512, alt: "ReparaSur" }],
   },
   twitter: {
     card: "summary_large_image",
