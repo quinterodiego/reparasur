@@ -108,7 +108,7 @@ export default function ContactoPage() {
           <div className="mt-12 rounded-2xl border border-slate-200/80 bg-slate-50 p-6 shadow-sm">
             <h3 className="font-semibold text-slate-800">También puedes contactarnos por:</h3>
             <ul className="mt-3 space-y-2 text-slate-600">
-              <li>📞 Teléfono: (XX) XXXX-XXXX</li>
+              <li>📞 Teléfono: (11) 5176-2371</li>
               <li>✉️ Email: info@reparasur.com</li>
             </ul>
           </div>

@@ -22,12 +22,12 @@ export default function Header() {
           href="/"
           className="flex items-center gap-2.5 font-semibold tracking-tight text-slate-900 transition hover:opacity-90"
         >
-          <span className="relative flex h-10 w-10 shrink-0 overflow-hidden shadow-lg shadow-emerald-500/25">
+          <span className="relative flex h-12 w-12 shrink-0 overflow-hidden">
             <Image
               src={logoSrc}
               alt="ReparaSur"
-              width={40}
-              height={40}
+              width={48}
+              height={48}
               className="object-cover"
               priority
             />
