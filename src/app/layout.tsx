@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   },
   description:
     "Servicio de reparación de computadoras, laptops, impresoras, recuperación de datos y redes. Soluciones rápidas y con garantía.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
