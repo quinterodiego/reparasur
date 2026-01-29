@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
+import AnimatedSection from "@/components/AnimatedSection";
 import { services } from "@/data/services";
 
 export const metadata = {
@@ -18,7 +19,7 @@ export default function ServiciosPage() {
         showCta={true}
         showVerServicios={false}
       />
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+      <AnimatedSection className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">
             Soluciones técnicas
@@ -41,10 +42,10 @@ export default function ServiciosPage() {
             />
           ))}
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Detalles de cada servicio */}
-      <section className="bg-slate-50 py-20">
+      <AnimatedSection className="bg-slate-50 py-20" delay={0.1}>
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">
@@ -137,7 +138,7 @@ export default function ServiciosPage() {
             </Link>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
     </>
   );
 }

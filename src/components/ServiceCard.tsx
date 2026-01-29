@@ -1,4 +1,7 @@
+"use client";
+
 import { ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface ServiceCardProps {
   icon: ReactNode;
@@ -9,9 +12,11 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ icon, title, description, id }: ServiceCardProps) {
   return (
-    <article
+    <motion.article
       id={id}
-      className="group relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-200/80 hover:shadow-xl hover:shadow-emerald-500/5"
+      className="group relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:border-emerald-200/80 hover:shadow-xl hover:shadow-emerald-500/5"
+      whileHover={{ y: -4 }}
+      transition={{ duration: 0.2 }}
     >
       <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br from-emerald-100/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       <div className="relative">
@@ -23,6 +28,6 @@ export default function ServiceCard({ icon, title, description, id }: ServiceCar
         </h3>
         <p className="mt-2 leading-relaxed text-slate-600">{description}</p>
       </div>
-    </article>
+    </motion.article>
   );
 }

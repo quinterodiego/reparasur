@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 interface HeroProps {
   title?: string;
@@ -35,18 +36,43 @@ export default function Hero({
       />
 
       <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
-        <div className="max-w-2xl">
-          <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-emerald-400">
+        <motion.div
+          className="max-w-2xl"
+          initial={{ opacity: 0, y: 28 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <motion.p
+            className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-emerald-400"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             Reparación · Landing pages · Desarrollo web · Zona sur
-          </p>
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+          </motion.p>
+          <motion.h1
+            className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+          >
             {title}
-          </h1>
-          <p className="mt-6 text-lg leading-relaxed text-slate-400 sm:text-xl">
+          </motion.h1>
+          <motion.p
+            className="mt-6 text-lg leading-relaxed text-slate-400 sm:text-xl"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             {subtitle}
-          </p>
+          </motion.p>
           {showCta && (
-            <div className="relative z-20 mt-10 flex flex-wrap gap-4">
+            <motion.div
+              className="relative z-20 mt-10 flex flex-wrap gap-4"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
               <Link
                 href="/contacto"
                 className="relative z-20 inline-flex items-center gap-2 rounded-full bg-emerald-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:bg-emerald-400 hover:shadow-emerald-500/40 active:scale-[0.98]"
@@ -63,9 +89,9 @@ export default function Hero({
                   Ver servicios
                 </button>
               )}
-            </div>
+            </motion.div>
           )}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
