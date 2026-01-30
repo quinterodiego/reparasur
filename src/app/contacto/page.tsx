@@ -145,7 +145,7 @@ export default function ContactoPage() {
             <h3 className="font-semibold text-slate-800">También puedes contactarnos por:</h3>
             <ul className="mt-3 space-y-2 text-slate-600">
               <li>📞 Teléfono: (11) 5176-2371</li>
-              <li>✉️ Email: info@reparasur.com</li>
+              <li>✉️ Email: reparasurarg@gmail.com</li>
             </ul>
           </div>
         </div>
