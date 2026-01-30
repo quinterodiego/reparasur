@@ -6,13 +6,44 @@ import Hero from "@/components/Hero";
 export default function ContactoPage() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setError(null);
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    setSent(true);
-    setLoading(false);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const body = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone") || "",
+      message: formData.get("message"),
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        setError(data.error ?? "No se pudo enviar el mensaje. Intentá de nuevo.");
+        setLoading(false);
+        return;
+      }
+
+      setSent(true);
+      form.reset();
+    } catch {
+      setError("Error de conexión. Revisá tu internet e intentá de nuevo.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -96,6 +127,11 @@ export default function ContactoPage() {
                   placeholder="Describe el problema de tu equipo o lo que necesitas..."
                 />
               </div>
+              {error && (
+                <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-700">
+                  {error}
+                </p>
+              )}
               <button
                 type="submit"
                 disabled={loading}
