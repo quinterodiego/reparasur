@@ -89,7 +89,7 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-slate-400">
               <li>📞 (11) 5176-2371</li>
-              <li>✉️ info@reparasur.com</li>
+              <li>✉️ reparasurarg@gmail.com</li>
             </ul>
           </div>
         </div>
