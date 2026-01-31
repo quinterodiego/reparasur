@@ -1,7 +1,10 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import Hero from "@/components/Hero";
+
+const ZonesMap = dynamic(() => import("@/components/ZonesMap"), { ssr: false });
 
 export default function ContactoPage() {
   const [sent, setSent] = useState(false);
@@ -147,6 +150,14 @@ export default function ContactoPage() {
               <li>📞 Teléfono: (11) 5176-2371</li>
               <li>✉️ Email: reparasurarg@gmail.com</li>
             </ul>
+          </div>
+
+          <div className="mt-16">
+            <h2 className="mb-2 text-2xl font-bold text-slate-900">Zona de cobertura</h2>
+            <p className="mb-6 text-slate-600">
+              Atendemos en Quilmes, Avellaneda, Lomas de Zamora, Banfield, Adrogué, Rafael Calzada y alrededores de la zona sur del GBA.
+            </p>
+            <ZonesMap />
           </div>
         </div>
       </section>
